@@ -1,27 +1,16 @@
 #!/usr/bin/env python3
-"""
-importing asyncio for asynchorous programming and time module for
-"""
+'''Task 2's module.
+'''
 import asyncio
 import time
 
-async_comprehension = __import__("1-async_comprehension").async_comprehension
+
+wait_n = __import__('1-concurrent_coroutines').wait_n
 
 
-async def measure_runtime() -> float:
-    """
-    measure_runtime coroutine that will execute async_comprehension
-    four times
-    """
-    start_time = time.perf_counter()
-    await asyncio.gather(
-        async_comprehension(),
-        async_comprehension(),
-        async_comprehension(),
-        async_comprehension(),
-    )
-    end_time = time.perf_counter()
-
-    elasped_time = end_time - start_time
-
-    return elasped_time
+def measure_time(n: int, max_delay: int) -> float:
+    '''Computes the average runtime of wait_n.
+    '''
+    start_time = time.time()
+    asyncio.run(wait_n(n, max_delay))
+    return (time.time() - start_time) / n
