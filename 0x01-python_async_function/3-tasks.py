@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Import wait_random 
+Import wait_random
 """
 import asyncio
 
