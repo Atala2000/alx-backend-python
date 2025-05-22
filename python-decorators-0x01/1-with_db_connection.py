@@ -6,7 +6,9 @@ import functools
 def with_db_connection(func):
     def wrapper(*args, **kwargs):
         conn = sqlite3.connect('users.db')
-        return func(conn, **kwargs)
+        results = func(conn, **kwargs)
+        conn.close()
+        return results
     return wrapper
 
 @with_db_connection 
