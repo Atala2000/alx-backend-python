@@ -1,18 +1,20 @@
 import sqlite3
 import functools
 
-#### decorator to lof SQL queries
+#### decorator to log SQL queries
+def log_queries():
+    def decorator(function):
+        @functools.wraps(function)
+        def wrapper(*args, **kwargs):
+            if 'query' in kwargs:
+                print(f"Executing SQL Query: {kwargs['query']}")
+            elif len(args) > 0:
+                print(f"Executing SQL Query: {args[0]}")
+            return function(*args, **kwargs)
+        return wrapper
+    return decorator
 
-def log_queries(function):
-    def wrapper(*args, **kwargs):
-        for k, v in kwargs.items():
-            print(v)
-        result = function(*args,**kwargs)
-        return result
-    return wrapper
-
-
-@log_queries
+@log_queries()
 def fetch_all_users(query):
     conn = sqlite3.connect('users.db')
     cursor = conn.cursor()
@@ -24,44 +26,3 @@ def fetch_all_users(query):
 #### fetch users while logging the query
 users = fetch_all_users(query="SELECT * FROM users")
 print(users)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
