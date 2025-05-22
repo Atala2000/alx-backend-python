@@ -7,7 +7,8 @@ def log_queries(function):
     def wrapper(*args, **kwargs):
         for k, v in kwargs.items():
             print(v)
-        function(*args,**kwargs)
+        result = function(*args,**kwargs)
+        return result
     return wrapper
 
 
@@ -22,6 +23,7 @@ def fetch_all_users(query):
 
 #### fetch users while logging the query
 users = fetch_all_users(query="SELECT * FROM users")
+print(users)
 
 
 
