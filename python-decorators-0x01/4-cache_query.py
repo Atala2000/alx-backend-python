@@ -20,10 +20,13 @@ def with_db_connection(func):
 
 def cache_query(func):
     def wrapper(*args, **kwargs):
-        print(kwargs.get('query'))
+        # print(kwargs.get('query'))
+        print(query_cache)
         results = query_cache.get(kwargs.get('query'))
         if not results:
+            print("This is not from cache")
             results = func(*args, **kwargs)
+            query_cache[kwargs.get('query')] = results
             print(results)
 
         return results
