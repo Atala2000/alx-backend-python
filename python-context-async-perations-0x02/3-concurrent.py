@@ -24,17 +24,16 @@ class DataBaseConnection:
         except Error as e:
             print(f"Connection error: {e}")
 
-    @staticmethod
-    async def async_fetch_users(db):
-        async with db.execute("SELECT * FROM users") as cursor:
-            results = await cursor.fetchall()
-            return results
+async def async_fetch_users(db):
+    async with db.execute("SELECT * FROM users") as cursor:
+        results = await cursor.fetchall()
+        return results
 
-    @staticmethod
-    async def async_fetch_older_users(db):
-        async with db.execute("SELECT * FROM users WHERE age > 40") as cursor:
-            results = await cursor.fetchall()
-            return results
+
+async def async_fetch_older_users(db):
+    async with db.execute("SELECT * FROM users WHERE age > 40") as cursor:
+        results = await cursor.fetchall()
+        return results
 
 async def fetch_concurrently():
     db = await DataBaseConnection.connect_database()
