@@ -60,3 +60,10 @@ class CustomUser(AbstractBaseUser):
 class Conversation(models.Model):
     conversation_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     participants = models.ForeignKey(CustomUser)
+
+
+class Message(models.Model):
+    message_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    message_body = models.TextField()
+    sent_at = models.DateTimeField()
+    created_at = models.DateTimeField(auto_now_add=True)
