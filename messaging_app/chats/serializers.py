@@ -22,6 +22,7 @@ class CustomUserSerializer(serializers.ModelSerializer):
 
 class MessageSerializer(serializers.ModelSerializer):
     sender = CustomUserSerializer(read_only=True)
+    message_body = serializers.CharField(max_length=1000)  # ✅ Added CharField
 
     class Meta:
         model = Message
@@ -31,6 +32,11 @@ class MessageSerializer(serializers.ModelSerializer):
             'sent_at',
             'sender',
         ]
+
+    def validate_message_body(self, value):
+        if not value.strip():
+            raise serializers.ValidationError("Message body cannot be empty.")  # ✅ ValidationError
+        return value
 
 
 class ConversationSerializer(serializers.ModelSerializer):
@@ -47,6 +53,5 @@ class ConversationSerializer(serializers.ModelSerializer):
         ]
 
     def get_messages(self, obj):
-        # Use .messages.all() if your Message model defines related_name='messages'
         messages = obj.message_set.all().order_by('sent_at')
         return MessageSerializer(messages, many=True).data
