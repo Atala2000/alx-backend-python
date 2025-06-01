@@ -59,7 +59,7 @@ class CustomUser(AbstractBaseUser):
 
 class Conversation(models.Model):
     conversation_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    participants = models.ForeignKey(CustomUser)
+    participants = models.ManyToManyField(CustomUser, related_name='conversations')
 
 
 class Message(models.Model):
