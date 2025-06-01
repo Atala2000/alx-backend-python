@@ -1,36 +1,38 @@
-from django.shortcuts import render
-from .serializers import MessageSerializer, ConversationSerializer
-from rest_framework import viewsets
+from rest_framework import viewsets, status
+from rest_framework.response import Response
 from django.shortcuts import get_object_or_404
 from .models import Message, Conversation
-from rest_framework.response import Response
+from .serializers import MessageSerializer, ConversationSerializer
+from rest_framework import filters
 
-# Create your views here.
-
-
-class MessageViewSet(viewsets.ViewSet):
+class MessageViewSet(viewsets.ModelViewSet):
     """
-    Simple Viewset to list messages
+    Viewset to list, retrieve, and create messages
     """
-    def list(self, request):
-        queryset  = Message.objects.all()
-        serializer = MessageSerializer(many=True)
-        return Response(serializer.data)
-    
-    def retrieve(self, request, pk=None):
-        queryset  = Message.objects.all()
-        message = get_object_or_404(queryset, pk=pk)
-        serializer = MessageSerializer(message)
-        return Response(serializer.data)
+    queryset = Message.objects.all()
+    serializer_class = MessageSerializer
+    filter_backends = [filters.OrderingFilter]
+    ordering_fields = ['sent_at']
+    ordering = ['-sent_at']
 
-class ConversationViewSet(viewsets.ViewSet):
-    def list(self, request):
-        queryset = Conversation.objects.all()
-        serializer = ConversationSerializer(many=True)
-        return Response(serializer.data)
-    
-    def retrieve(self, request, pk=None):
-        queryset = Conversation.objects.all()
-        conversation = get_object_or_404(queryset, pk=pk)
-        serializer = ConversationSerializer(conversation)
-        return Response(serializer.data)
+    def create(self, request, *args, **kwargs):
+        serializer = MessageSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save(sender=request.user)  # Assumes request.user is set properly
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+class ConversationViewSet(viewsets.ModelViewSet):
+    """
+    Viewset to list, retrieve, and create conversations
+    """
+    queryset = Conversation.objects.all()
+    serializer_class = ConversationSerializer
+
+    def create(self, request, *args, **kwargs):
+        serializer = ConversationSerializer(data=request.data)
+        if serializer.is_valid():
+            conversation = serializer.save()
+            return Response(ConversationSerializer(conversation).data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)

@@ -21,16 +21,32 @@ class CustomUserSerializer(serializers.ModelSerializer):
 
 
 class MessageSerializer(serializers.ModelSerializer):
+    sender = CustomUserSerializer(read_only=True)
+
     class Meta:
         model = Message
         fields = [
-            'message_body', 'sent_at'
+            'id',
+            'message_body',
+            'sent_at',
+            'sender',
         ]
 
 
 class ConversationSerializer(serializers.ModelSerializer):
+    participants = CustomUserSerializer(many=True, read_only=True)
+    messages = serializers.SerializerMethodField()
+
     class Meta:
         model = Conversation
         fields = [
-            'conversation', 'participants'
+            'id',
+            'conversation',
+            'participants',
+            'messages',
         ]
+
+    def get_messages(self, obj):
+        # Use .messages.all() if your Message model defines related_name='messages'
+        messages = obj.message_set.all().order_by('sent_at')
+        return MessageSerializer(messages, many=True).data
