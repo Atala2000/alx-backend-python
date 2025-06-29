@@ -46,8 +46,7 @@ class ConversationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Conversation
         fields = [
-            'id',
-            'conversation',
+            'conversation_id',
             'participants',
             'messages',
         ]
