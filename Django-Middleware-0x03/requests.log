@@ -1,0 +1,12 @@
+WARNING:django.request:Not Found: /
+WARNING:django.request:Not Found: /accounts/profile/
+WARNING:django.request:Not Found: /
+INFO:django.utils.autoreload:/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py changed, reloading.
+INFO:django.utils.autoreload:/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py changed, reloading.
+INFO:django.utils.autoreload:/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py changed, reloading.
+WARNING:django.request:Not Found: /
+INFO:django.utils.autoreload:/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py changed, reloading.
+INFO:django.utils.autoreload:/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py changed, reloading.
+INFO:django.utils.autoreload:/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py changed, reloading.
+INFO:root:2025-07-08 11:04:18.226741 - User: johndoe - Path: /
+WARNING:django.request:Not Found: /
