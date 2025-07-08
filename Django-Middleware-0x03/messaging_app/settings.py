@@ -55,7 +55,11 @@ MIDDLEWARE = [
     'chats.middleware.RequestLoggingMiddleware'
 ]
 
+# 
+
 ROOT_URLCONF = 'messaging_app.urls'
+
+
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
