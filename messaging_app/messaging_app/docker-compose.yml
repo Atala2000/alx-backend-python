@@ -7,6 +7,12 @@ services:
     container_name: messaging_app
     ports:
       - "8000:8000"    
+    command: >
+      sh -c "
+        python3 manage.py migrate &&
+        python3 manage.py collectstatic --noinput &&
+        python3 manage.py runserver 0.0.0.0:8000
+      "
   db:
     image: mysql:8.0
     container_name: messaging_db
