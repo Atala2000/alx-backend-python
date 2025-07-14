@@ -1,15 +1,23 @@
 version: "3.8"
 services:
   web:
-    build: .
+    build:
+      context: ..
+      dockerfile: Dockerfile
     container_name: messaging_app
     ports:
-      - "8000:8000"
-    
+      - "8000:8000"    
   db:
-    image: postgres
+    image: mysql:8.0
     container_name: messaging_db
     environment:
-      POSTGRES_USER: ${MYSQL_USER}
-      POSTGRES_PASSWORD: ${MYSQL_PASSWORD}
-      POSTGRES_DB: ${MYSQL_DB}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DB}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+    volumes:
+      - db_data:/var/lib/mysql/data
+
+
+volumes:
+  db_data:
