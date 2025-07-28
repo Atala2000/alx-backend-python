@@ -296,3 +296,355 @@ django.core.exceptions.PermissionDenied: Access is only allowed between 9 AM and
 INFO:django.utils.autoreload:/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/messaging_app/settings.py changed, reloading.
 INFO:root:2025-07-28 09:36:12.012564 - User: AnonymousUser - Path: /
 WARNING:django.request:Not Found: /
+INFO:root:2025-07-28 15:08:28.925653 - User: AnonymousUser - Path: /
+WARNING:django.request:Not Found: /
+INFO:root:2025-07-28 15:08:39.091558 - User: AnonymousUser - Path: /admin/
+INFO:root:2025-07-28 15:08:39.120289 - User: AnonymousUser - Path: /admin/login/
+INFO:root:2025-07-28 15:08:43.118674 - User: AnonymousUser - Path: /admin/login/
+INFO:root:2025-07-28 15:09:05.589934 - User: AnonymousUser - Path: /admin/login/
+INFO:root:2025-07-28 15:09:09.745628 - User: AnonymousUser - Path: /admin/login/
+INFO:root:2025-07-28 15:09:11.149300 - User: atala - Path: /admin/
+ERROR:django.request:Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 265, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 246, in inner
+    return view(request, *args, **kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 562, in index
+    app_list = self.get_app_list(request)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 546, in get_app_list
+    app_dict = self._build_app_dict(request, app_label)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 488, in _build_app_dict
+    has_module_perms = model_admin.has_module_permission(request)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 641, in has_module_permission
+    return request.user.has_module_perms(self.opts.app_label)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/utils/functional.py", line 253, in inner
+    return func(_wrapped, *args)
+AttributeError: 'CustomUser' object has no attribute 'has_module_perms'
+INFO:django.utils.autoreload:/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py changed, reloading.
+INFO:django.utils.autoreload:/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py changed, reloading.
+INFO:root:2025-07-28 15:10:26.755851 - User: atala - Path: /admin/
+ERROR:django.request:Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 265, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 246, in inner
+    return view(request, *args, **kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 562, in index
+    app_list = self.get_app_list(request)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 546, in get_app_list
+    app_dict = self._build_app_dict(request, app_label)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 488, in _build_app_dict
+    has_module_perms = model_admin.has_module_permission(request)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 641, in has_module_permission
+    return request.user.has_module_perms(self.opts.app_label)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/utils/functional.py", line 253, in inner
+    return func(_wrapped, *args)
+AttributeError: 'CustomUser' object has no attribute 'has_module_perms'
+INFO:django.utils.autoreload:/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py changed, reloading.
+INFO:django.utils.autoreload:/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py changed, reloading.
+INFO:django.utils.autoreload:/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py changed, reloading.
+INFO:django.utils.autoreload:/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py changed, reloading.
+INFO:django.utils.autoreload:/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py changed, reloading.
+INFO:root:2025-07-28 15:14:13.703180 - User: atala - Path: /admin/
+ERROR:django.request:Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 265, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 246, in inner
+    return view(request, *args, **kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 562, in index
+    app_list = self.get_app_list(request)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 546, in get_app_list
+    app_dict = self._build_app_dict(request, app_label)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 488, in _build_app_dict
+    has_module_perms = model_admin.has_module_permission(request)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 641, in has_module_permission
+    return request.user.has_module_perms(self.opts.app_label)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/utils/functional.py", line 253, in inner
+    return func(_wrapped, *args)
+AttributeError: 'CustomUser' object has no attribute 'has_module_perms'
+INFO:root:2025-07-28 15:14:17.225328 - User: atala - Path: /admin/
+ERROR:django.request:Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 265, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 246, in inner
+    return view(request, *args, **kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 562, in index
+    app_list = self.get_app_list(request)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 546, in get_app_list
+    app_dict = self._build_app_dict(request, app_label)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 488, in _build_app_dict
+    has_module_perms = model_admin.has_module_permission(request)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 641, in has_module_permission
+    return request.user.has_module_perms(self.opts.app_label)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/utils/functional.py", line 253, in inner
+    return func(_wrapped, *args)
+AttributeError: 'CustomUser' object has no attribute 'has_module_perms'
+INFO:root:2025-07-28 15:14:18.047285 - User: atala - Path: /admin/
+ERROR:django.request:Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 265, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 246, in inner
+    return view(request, *args, **kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 562, in index
+    app_list = self.get_app_list(request)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 546, in get_app_list
+    app_dict = self._build_app_dict(request, app_label)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 488, in _build_app_dict
+    has_module_perms = model_admin.has_module_permission(request)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 641, in has_module_permission
+    return request.user.has_module_perms(self.opts.app_label)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/utils/functional.py", line 253, in inner
+    return func(_wrapped, *args)
+AttributeError: 'CustomUser' object has no attribute 'has_module_perms'
+INFO:root:2025-07-28 15:14:18.699987 - User: atala - Path: /admin/
+ERROR:django.request:Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 265, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 246, in inner
+    return view(request, *args, **kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 562, in index
+    app_list = self.get_app_list(request)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 546, in get_app_list
+    app_dict = self._build_app_dict(request, app_label)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 488, in _build_app_dict
+    has_module_perms = model_admin.has_module_permission(request)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 641, in has_module_permission
+    return request.user.has_module_perms(self.opts.app_label)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/utils/functional.py", line 253, in inner
+    return func(_wrapped, *args)
+AttributeError: 'CustomUser' object has no attribute 'has_module_perms'
+INFO:django.utils.autoreload:/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py changed, reloading.
+INFO:django.utils.autoreload:/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py changed, reloading.
+INFO:root:2025-07-28 15:14:52.908068 - User: atala - Path: /admin/
+ERROR:django.request:Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py", line 63, in __call__
+    count += 1
+UnboundLocalError: local variable 'count' referenced before assignment
+INFO:root:2025-07-28 15:14:53.834825 - User: atala - Path: /admin/
+ERROR:django.request:Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py", line 63, in __call__
+    count += 1
+UnboundLocalError: local variable 'count' referenced before assignment
+INFO:root:2025-07-28 15:14:58.137421 - User: atala - Path: /admin/
+ERROR:django.request:Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py", line 63, in __call__
+    count += 1
+UnboundLocalError: local variable 'count' referenced before assignment
+INFO:django.utils.autoreload:/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py changed, reloading.
+INFO:django.utils.autoreload:/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py changed, reloading.
+INFO:root:2025-07-28 15:15:27.790061 - User: atala - Path: /admin/
+ERROR:django.request:Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 265, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 246, in inner
+    return view(request, *args, **kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 562, in index
+    app_list = self.get_app_list(request)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 546, in get_app_list
+    app_dict = self._build_app_dict(request, app_label)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 488, in _build_app_dict
+    has_module_perms = model_admin.has_module_permission(request)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 641, in has_module_permission
+    return request.user.has_module_perms(self.opts.app_label)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/utils/functional.py", line 253, in inner
+    return func(_wrapped, *args)
+AttributeError: 'CustomUser' object has no attribute 'has_module_perms'
+INFO:root:2025-07-28 15:15:29.051600 - User: atala - Path: /admin/
+ERROR:django.request:Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 265, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 246, in inner
+    return view(request, *args, **kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 562, in index
+    app_list = self.get_app_list(request)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 546, in get_app_list
+    app_dict = self._build_app_dict(request, app_label)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 488, in _build_app_dict
+    has_module_perms = model_admin.has_module_permission(request)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 641, in has_module_permission
+    return request.user.has_module_perms(self.opts.app_label)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/utils/functional.py", line 253, in inner
+    return func(_wrapped, *args)
+AttributeError: 'CustomUser' object has no attribute 'has_module_perms'
+INFO:root:2025-07-28 15:15:29.751470 - User: atala - Path: /admin/
+ERROR:django.request:Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 265, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 246, in inner
+    return view(request, *args, **kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 562, in index
+    app_list = self.get_app_list(request)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 546, in get_app_list
+    app_dict = self._build_app_dict(request, app_label)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 488, in _build_app_dict
+    has_module_perms = model_admin.has_module_permission(request)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 641, in has_module_permission
+    return request.user.has_module_perms(self.opts.app_label)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/utils/functional.py", line 253, in inner
+    return func(_wrapped, *args)
+AttributeError: 'CustomUser' object has no attribute 'has_module_perms'
+INFO:root:2025-07-28 15:15:30.167935 - User: atala - Path: /admin/
+ERROR:django.request:Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 265, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 246, in inner
+    return view(request, *args, **kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 562, in index
+    app_list = self.get_app_list(request)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 546, in get_app_list
+    app_dict = self._build_app_dict(request, app_label)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 488, in _build_app_dict
+    has_module_perms = model_admin.has_module_permission(request)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 641, in has_module_permission
+    return request.user.has_module_perms(self.opts.app_label)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/utils/functional.py", line 253, in inner
+    return func(_wrapped, *args)
+AttributeError: 'CustomUser' object has no attribute 'has_module_perms'
+INFO:root:2025-07-28 15:15:38.404763 - User: atala - Path: /admin/
+ERROR:django.request:Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 265, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 246, in inner
+    return view(request, *args, **kwargs)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 562, in index
+    app_list = self.get_app_list(request)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 546, in get_app_list
+    app_dict = self._build_app_dict(request, app_label)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 488, in _build_app_dict
+    has_module_perms = model_admin.has_module_permission(request)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 641, in has_module_permission
+    return request.user.has_module_perms(self.opts.app_label)
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/utils/functional.py", line 253, in inner
+    return func(_wrapped, *args)
+AttributeError: 'CustomUser' object has no attribute 'has_module_perms'
+INFO:django.utils.autoreload:/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py changed, reloading.
+INFO:django.utils.autoreload:/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/messaging_app/settings.py changed, reloading.
