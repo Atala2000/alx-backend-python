@@ -101,3 +101,198 @@ Traceback (most recent call last):
   File "/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py", line 47, in __call__
     raise PermissionDenied("Access is only allowed between 9 AM and 6 PM.")
 django.core.exceptions.PermissionDenied: Access is only allowed between 9 AM and 6 PM.
+INFO:root:2025-07-28 06:30:28.517552 - User: AnonymousUser - Path: /
+WARNING:django.request:Forbidden (Permission denied): /
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py", line 47, in __call__
+    raise PermissionDenied("Access is only allowed between 9 AM and 6 PM.")
+django.core.exceptions.PermissionDenied: Access is only allowed between 9 AM and 6 PM.
+INFO:root:2025-07-28 06:30:28.574858 - User: AnonymousUser - Path: /favicon.ico
+WARNING:django.request:Forbidden (Permission denied): /favicon.ico
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py", line 47, in __call__
+    raise PermissionDenied("Access is only allowed between 9 AM and 6 PM.")
+django.core.exceptions.PermissionDenied: Access is only allowed between 9 AM and 6 PM.
+INFO:root:2025-07-28 06:30:29.443916 - User: AnonymousUser - Path: /
+WARNING:django.request:Forbidden (Permission denied): /
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py", line 47, in __call__
+    raise PermissionDenied("Access is only allowed between 9 AM and 6 PM.")
+django.core.exceptions.PermissionDenied: Access is only allowed between 9 AM and 6 PM.
+INFO:root:2025-07-28 06:30:29.492002 - User: AnonymousUser - Path: /favicon.ico
+WARNING:django.request:Forbidden (Permission denied): /favicon.ico
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py", line 47, in __call__
+    raise PermissionDenied("Access is only allowed between 9 AM and 6 PM.")
+django.core.exceptions.PermissionDenied: Access is only allowed between 9 AM and 6 PM.
+INFO:root:2025-07-28 06:30:30.141522 - User: AnonymousUser - Path: /
+WARNING:django.request:Forbidden (Permission denied): /
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py", line 47, in __call__
+    raise PermissionDenied("Access is only allowed between 9 AM and 6 PM.")
+django.core.exceptions.PermissionDenied: Access is only allowed between 9 AM and 6 PM.
+INFO:root:2025-07-28 06:30:30.202360 - User: AnonymousUser - Path: /favicon.ico
+WARNING:django.request:Forbidden (Permission denied): /favicon.ico
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py", line 47, in __call__
+    raise PermissionDenied("Access is only allowed between 9 AM and 6 PM.")
+django.core.exceptions.PermissionDenied: Access is only allowed between 9 AM and 6 PM.
+INFO:root:2025-07-28 06:30:30.689970 - User: AnonymousUser - Path: /
+WARNING:django.request:Forbidden (Permission denied): /
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py", line 47, in __call__
+    raise PermissionDenied("Access is only allowed between 9 AM and 6 PM.")
+django.core.exceptions.PermissionDenied: Access is only allowed between 9 AM and 6 PM.
+INFO:root:2025-07-28 06:30:30.735915 - User: AnonymousUser - Path: /favicon.ico
+WARNING:django.request:Forbidden (Permission denied): /favicon.ico
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py", line 47, in __call__
+    raise PermissionDenied("Access is only allowed between 9 AM and 6 PM.")
+django.core.exceptions.PermissionDenied: Access is only allowed between 9 AM and 6 PM.
+INFO:django.utils.autoreload:/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py changed, reloading.
+INFO:django.utils.autoreload:/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py changed, reloading.
+INFO:django.utils.autoreload:/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py changed, reloading.
+INFO:root:2025-07-28 06:31:02.905839 - User: AnonymousUser - Path: /
+WARNING:django.request:Forbidden (Permission denied): /
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py", line 48, in __call__
+    raise PermissionDenied("Access is only allowed between 9 AM and 6 PM.")
+django.core.exceptions.PermissionDenied: Access is only allowed between 9 AM and 6 PM.
+INFO:root:2025-07-28 06:31:02.987176 - User: AnonymousUser - Path: /favicon.ico
+WARNING:django.request:Forbidden (Permission denied): /favicon.ico
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py", line 48, in __call__
+    raise PermissionDenied("Access is only allowed between 9 AM and 6 PM.")
+django.core.exceptions.PermissionDenied: Access is only allowed between 9 AM and 6 PM.
+INFO:root:2025-07-28 06:31:42.677011 - User: AnonymousUser - Path: /
+WARNING:django.request:Forbidden (Permission denied): /
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py", line 48, in __call__
+    raise PermissionDenied("Access is only allowed between 9 AM and 6 PM.")
+django.core.exceptions.PermissionDenied: Access is only allowed between 9 AM and 6 PM.
+INFO:root:2025-07-28 06:31:42.730851 - User: AnonymousUser - Path: /favicon.ico
+WARNING:django.request:Forbidden (Permission denied): /favicon.ico
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py", line 48, in __call__
+    raise PermissionDenied("Access is only allowed between 9 AM and 6 PM.")
+django.core.exceptions.PermissionDenied: Access is only allowed between 9 AM and 6 PM.
+INFO:root:2025-07-28 06:31:45.842387 - User: AnonymousUser - Path: /
+WARNING:django.request:Forbidden (Permission denied): /
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py", line 48, in __call__
+    raise PermissionDenied("Access is only allowed between 9 AM and 6 PM.")
+django.core.exceptions.PermissionDenied: Access is only allowed between 9 AM and 6 PM.
+INFO:root:2025-07-28 06:31:45.902161 - User: AnonymousUser - Path: /favicon.ico
+WARNING:django.request:Forbidden (Permission denied): /favicon.ico
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py", line 48, in __call__
+    raise PermissionDenied("Access is only allowed between 9 AM and 6 PM.")
+django.core.exceptions.PermissionDenied: Access is only allowed between 9 AM and 6 PM.
+INFO:root:2025-07-28 06:31:56.821039 - User: AnonymousUser - Path: /
+WARNING:django.request:Forbidden (Permission denied): /
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py", line 48, in __call__
+    raise PermissionDenied("Access is only allowed between 9 AM and 6 PM.")
+django.core.exceptions.PermissionDenied: Access is only allowed between 9 AM and 6 PM.
+INFO:root:2025-07-28 06:31:56.875474 - User: AnonymousUser - Path: /favicon.ico
+WARNING:django.request:Forbidden (Permission denied): /favicon.ico
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py", line 48, in __call__
+    raise PermissionDenied("Access is only allowed between 9 AM and 6 PM.")
+django.core.exceptions.PermissionDenied: Access is only allowed between 9 AM and 6 PM.
+INFO:root:2025-07-28 06:32:35.317414 - User: AnonymousUser - Path: /
+WARNING:django.request:Forbidden (Permission denied): /
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py", line 48, in __call__
+    raise PermissionDenied("Access is only allowed between 9 AM and 6 PM.")
+django.core.exceptions.PermissionDenied: Access is only allowed between 9 AM and 6 PM.
+INFO:root:2025-07-28 06:32:35.375805 - User: AnonymousUser - Path: /favicon.ico
+WARNING:django.request:Forbidden (Permission denied): /favicon.ico
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py", line 48, in __call__
+    raise PermissionDenied("Access is only allowed between 9 AM and 6 PM.")
+django.core.exceptions.PermissionDenied: Access is only allowed between 9 AM and 6 PM.
+INFO:root:2025-07-28 06:33:04.076809 - User: AnonymousUser - Path: /
+WARNING:django.request:Forbidden (Permission denied): /
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py", line 48, in __call__
+    raise PermissionDenied("Access is only allowed between 9 AM and 6 PM.")
+django.core.exceptions.PermissionDenied: Access is only allowed between 9 AM and 6 PM.
+INFO:root:2025-07-28 06:33:04.126084 - User: AnonymousUser - Path: /favicon.ico
+WARNING:django.request:Forbidden (Permission denied): /favicon.ico
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py", line 48, in __call__
+    raise PermissionDenied("Access is only allowed between 9 AM and 6 PM.")
+django.core.exceptions.PermissionDenied: Access is only allowed between 9 AM and 6 PM.
+INFO:django.utils.autoreload:/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/messaging_app/settings.py changed, reloading.
+INFO:root:2025-07-28 09:34:07.648243 - User: AnonymousUser - Path: /
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+TypeError: 'PermissionDenied' object is not callable
+INFO:root:2025-07-28 09:34:08.122793 - User: AnonymousUser - Path: /favicon.ico
+ERROR:django.request:Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+TypeError: 'PermissionDenied' object is not callable
+INFO:django.utils.autoreload:/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/messaging_app/settings.py changed, reloading.
+INFO:root:2025-07-28 09:35:29.915204 - User: AnonymousUser - Path: /
+WARNING:django.request:Not Found: /
+INFO:root:2025-07-28 09:35:30.155761 - User: AnonymousUser - Path: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+INFO:root:2025-07-28 09:35:55.366241 - User: AnonymousUser - Path: /
+WARNING:django.request:Not Found: /
+INFO:django.utils.autoreload:/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/messaging_app/settings.py changed, reloading.
+INFO:root:2025-07-28 06:35:58.530114 - User: AnonymousUser - Path: /
+WARNING:django.request:Forbidden (Permission denied): /
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py", line 48, in __call__
+    raise PermissionDenied("Access is only allowed between 9 AM and 6 PM.")
+django.core.exceptions.PermissionDenied: Access is only allowed between 9 AM and 6 PM.
+INFO:django.utils.autoreload:/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/messaging_app/settings.py changed, reloading.
+INFO:root:2025-07-28 09:36:12.012564 - User: AnonymousUser - Path: /
+WARNING:django.request:Not Found: /

@@ -37,6 +37,7 @@ class RestrictAccessByTimeMiddleware:
 
     def __call__(self, request):
         now = datetime.now()
+        print(now)
 
         # Define allowed access window
         dt1 = datetime(now.year, now.month, now.day, 9, 0)   # 9:00 AM
