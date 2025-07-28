@@ -10,3 +10,94 @@ INFO:django.utils.autoreload:/home/atala/Personal/alx-backend-python/Django-Midd
 INFO:django.utils.autoreload:/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py changed, reloading.
 INFO:root:2025-07-08 11:04:18.226741 - User: johndoe - Path: /
 WARNING:django.request:Not Found: /
+INFO:root:2025-07-08 12:22:43.786478 - User: johndoe - Path: /
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+TypeError: 'PermissionDenied' object is not callable
+INFO:django.utils.autoreload:/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py changed, reloading.
+INFO:root:2025-07-08 12:22:58.027567 - User: johndoe - Path: /
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+TypeError: 'PermissionDenied' object is not callable
+INFO:django.utils.autoreload:/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py changed, reloading.
+INFO:root:2025-07-08 12:23:49.945837 - User: johndoe - Path: /
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+TypeError: 'PermissionDenied' object is not callable
+INFO:django.utils.autoreload:/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py changed, reloading.
+INFO:root:2025-07-08 12:26:20.871139 - User: johndoe - Path: /
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+TypeError: 'PermissionDenied' object is not callable
+INFO:root:2025-07-08 12:29:26.124528 - User: johndoe - Path: /
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+TypeError: 'PermissionDenied' object is not callable
+INFO:root:2025-07-08 12:36:19.097876 - User: johndoe - Path: /
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+TypeError: 'PermissionDenied' object is not callable
+INFO:root:2025-07-08 12:47:12.015553 - User: johndoe - Path: /
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+TypeError: 'PermissionDenied' object is not callable
+INFO:root:2025-07-28 05:34:48.511187 - User: AnonymousUser - Path: /
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+TypeError: 'PermissionDenied' object is not callable
+INFO:root:2025-07-28 05:34:49.023821 - User: AnonymousUser - Path: /favicon.ico
+ERROR:django.request:Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+TypeError: 'PermissionDenied' object is not callable
+INFO:django.utils.autoreload:/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py changed, reloading.
+INFO:django.utils.autoreload:/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py changed, reloading.
+INFO:root:2025-07-28 05:37:33.290710 - User: AnonymousUser - Path: /
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+TypeError: 'PermissionDenied' object is not callable
+INFO:root:2025-07-28 05:37:33.557091 - User: AnonymousUser - Path: /favicon.ico
+ERROR:django.request:Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+TypeError: 'PermissionDenied' object is not callable
+INFO:django.utils.autoreload:/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py changed, reloading.
+INFO:django.utils.autoreload:/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py changed, reloading.
+INFO:django.utils.autoreload:/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/messaging_app/settings.py changed, reloading.
+INFO:django.utils.autoreload:/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/messaging_app/settings.py changed, reloading.
+INFO:root:2025-07-28 05:40:52.374952 - User: AnonymousUser - Path: /
+WARNING:django.request:Forbidden (Permission denied): /
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py", line 47, in __call__
+    raise PermissionDenied("Access is only allowed between 9 AM and 6 PM.")
+django.core.exceptions.PermissionDenied: Access is only allowed between 9 AM and 6 PM.
+INFO:root:2025-07-28 05:40:52.567775 - User: AnonymousUser - Path: /favicon.ico
+WARNING:django.request:Forbidden (Permission denied): /favicon.ico
+Traceback (most recent call last):
+  File "/home/atala/Personal/alx-backend-python/messaging_app/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/atala/Personal/alx-backend-python/Django-Middleware-0x03/chats/middleware.py", line 47, in __call__
+    raise PermissionDenied("Access is only allowed between 9 AM and 6 PM.")
+django.core.exceptions.PermissionDenied: Access is only allowed between 9 AM and 6 PM.
